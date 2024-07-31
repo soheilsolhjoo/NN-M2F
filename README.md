@@ -3,7 +3,7 @@ NN-M2F  Copyright (C) 2018  Soheil Solhjoo,
 This program comes with ABSOLUTELY NO WARRANTY.  
 This is free software, and I publish it under CC BY-NC-SA 4.0.
 
-This code is to train a NN in Matlab and convert it into Fortran 90 to be used in relevant software packages, such as MARC (a FEM solver). I wrote and tested the code in 2018.
+This code is to train a NN in Matlab and convert it into Fortran 90 to be used in relevant software packages, such as MARC (a FEM solver).
 
 ## Table of Contents
 1. [Introduction](#a-very-short-note-on-files-and-how-to-use-the-code)
