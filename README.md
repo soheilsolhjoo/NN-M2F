@@ -11,8 +11,8 @@ This code is to train a NN in Matlab and convert it into Fortran 90 to be used i
 3. [Other dimensions](#other-dimensions)
 
 ## A very short note on files and how to use the code
-1. **1_NN_1D.m** defines stress as a function of strain, and trains a network with a [hiddenSizes](https://mathworks.com/help/deeplearning/ref/feedforwardnet.html#mw_c6e1d17d-b711-42ec-81cf-1a0eb4271932) of [4 3]. It then saves the trained network as *netFcn.m*.
-2. **2_netFcn_2_Fortran.m** converts the saved network to Fortran 90 and saves it as *NN_mat.f*.
+1. **1_NN_1D.m** defines stress as a function of strain, and trains a network with a [hiddenSizes](https://mathworks.com/help/deeplearning/ref/feedforwardnet.html#mw_c6e1d17d-b711-42ec-81cf-1a0eb4271932) of [4 3]. It then saves the trained network as *netFcn.m*. (See [Other dimensions](#other-dimensions) for 2D and 3D networks.)
+2. **2_NN_M2F.m** converts the saved network to Fortran 90 and saves it as *NN_mat.f*.
 3. One can use this file now in MARC easily by including it in a subroutine. For example, if used with *wkslp*, *include NN_mat* can be added to the first line. Then the following can be used to calculate stress and slope:
 ```
 real ∗8 deps, nextyld
